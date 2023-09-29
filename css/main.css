@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #48abcc;
+  justify-content: center;
+}
+.header{
+  text-align: center;
+}
+.header span {
+  color: #ffb700;
+}
+.header h1{
+  color: #fff;
+  font-weight: 400;
+}
+.grid-game{
+  gap: 1rem;
+  display: flex;
+  margin-top: 19px;
+}
+.player-board {
+  gap: 9px;
+  width: 25%;
+  display: grid;
+}
+.card-game {
+  border-radius: 6px;
+  text-align: center;
+  background: white;
+}
+.card-game img {
+  width: 60px;
+  transition: all .2s;
+}
+.card-game img:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+.card-profile {
+  border-radius: 6px;
+  text-align: center;
+  background: white;
+  padding: 19px;
+  font-size: .9rem;
+  font-weight: 600;
+}
+.card-profile.user{
+  color: #13903d;
+}
+.card-profile.laptop{
+  color: #DC143C;
+}
+.board-game{
+  width: 300px;
+  padding: 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 6px;
+}
+.board-play {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.board-play img {
+  width: 60px;
+}
+.board-play img.animated{
+  animation: appear .3s linear;
+}
+@keyframes appear {
+  0%{
+    scale: .8;
+    opacity: 0;
+  }
+}
+.board-play .player-content{
+  font-weight: 300;
+  font-size: .9rem;
+  text-align: center;
+}
+.game-output{
+  padding: 9px;
+  color: white;
+  font-size: .9rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 6px;
+  background: #48abcc;
+}

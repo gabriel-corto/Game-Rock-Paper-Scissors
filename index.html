@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Game...">
+  <title>Jogo - Pedra, Papel e Tesoura</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="app">
+    
+    <header class="header">
+      <h1><i class="fa-solid fa-gamepad"></i> Wel<span>Come</span></h1>
+    </header>
+
+    <div class="grid-game">
+      <div class="grid-item player-board user-player">
+        <div class="card-profile user">
+          <i class="fa-solid fa-user-circle"></i>
+          Gabriel
+        </div>
+        <div class="card-game">
+          <img src="assets/pedra.png" alt="">
+        </div>
+        <div class="card-game">
+          <img src="assets/papel.png" alt="">
+        </div>
+        <div class="card-game">
+          <img src="assets/tesoura.png" alt="">
+        </div>
+      </div>
+
+      <div class="grid-item board-game">
+        <p class="board-title">Mesa de Jogo</p>
+        <div class="board-play">
+          <div class="play user-play">
+            <figure class="render_card_user">
+              <img src="assets/papel.png" alt="">
+            </figure>
+            <div class="player-content">Gabriel</div>
+          </div>
+          <h1>VS</h1>
+          <div class="play vs-play">
+            <figure class="render_card_vs_player">
+             <img src="assets/tesoura.png" alt="" class="appear">
+            </figure>
+            <div class="player-content">PC</div>
+          </div>
+        </div>
+        <div class="game-output">
+          O Gabriel Venceu O Jogo !
+        </div>
+      </div>
+      
+      <div class="grid-item player-board vs-player">
+        <div class="card-profile laptop">
+          <i class="fa-solid fa-laptop"></i>
+          PC
+        </div>
+        <div class="card-game">
+          <img src="assets/pedra.png" alt="">
+        </div>
+        <div class="card-game">
+          <img src="assets/papel.png" alt="">
+        </div>
+        <div class="card-game">
+          <img src="assets/tesoura.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--icons from font awesome bundle javascript-->
+  <script src="js/icons.js"></script>
+  <!--Javascript Local File-->
+  <script src="js/App.js"></script>
+  
+</body>
+</html>
