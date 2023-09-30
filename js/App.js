@@ -38,6 +38,23 @@ function Play() {
         const user = CurremtCard.getAttribute("src")
         const game_output = document.querySelector(".game-output")
 
+        const stone = 'assets/pedra.png'
+        const paper = 'assets/papel.png'
+        const scissors = 'assets/tesoura.png'
+
+        //User Play Paper and PC Play Stone
+        //User Play Stone e PC Play scissors
+        //User Play scissors e PC Play Paper
+        if(user === paper && computer === stone || user === stone && computer === scissors || user === scissors && computer === paper){
+          game_output.innerHTML = "Usuário Venceu"
+        }
+        else if(user === paper && computer === paper || user === stone && computer === stone || user === scissors && computer === scissors){
+          game_output.innerHTML = "Empate"
+        }
+        else {
+          game_output.innerHTML = "Computador Venceu"
+        }
+      
       }, 600)
     })
   })

@@ -1,5 +1,5 @@
 
-# Regras da Lógica do Jogo 
+# Game Logic Rules
 
 1. STONE TAKES OVER SCISSORS; 
 2. PAPER WIN FROM STONE; 
