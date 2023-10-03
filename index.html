@@ -4,37 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="My Game...">
-  <title>Jogo - Pedra, Papel e Tesoura</title>
+  <title>Game - Stone, Papet, Scissors</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div id="app">
+
     <header class="header">
       <h1><i class="fa-solid fa-gamepad"></i> Wel<span>Come</span></h1>
     </header>
+
     <div class="username">
       <form id="form">
-        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your name" autofocus>
         <button type="submit">Start Game</button>
       </form> 
     </div>
+
     <main class="grid-game">
       <div class="grid-item player-board user-player">
         <div class="card-profile user">
-        </div>
-        <div class="card-game">
-          <img src="assets/pedra.png" alt="">
-        </div>
-        <div class="card-game">
-          <img src="assets/papel.png" alt="">
-        </div>
-        <div class="card-game">
-          <img src="assets/tesoura.png" alt="">
+          <!-- Render By Javascript File UserCardGame -->
         </div>
       </div>
       <div class="grid-item board-game">
         <p class="board-title">Board Game</p>
         <div class="board-play">
+          <!-- Appear User Played Image-->
           <div class="play user-play">
             <figure class="render_card_user">
               <img src="assets/papel.png" alt="">
@@ -42,8 +38,9 @@
             <div class="player-content"></div>
           </div>
           <h1 id="versus">VS</h1>
-          <div class="play vs-play">
-            <figure class="render_card_vs_player">
+          <!-- Appear User Played Image-->
+          <div class="play robot-play">
+            <figure class="render_card_robot_player">
              <img src="assets/tesoura.png" alt="" class="appear">
             </figure>
             <div class="player-content">Robot</div>
@@ -51,23 +48,24 @@
         </div>
         <div class="game-output">RESULTADO!</div>
       </div>
-      <div class="grid-item player-board vs-player">
+      <div class="grid-item player-board robot-player">
         <div class="card-profile laptop"><i class="fa-solid fa-robot"></i> Robot</div>
-        <div class="card-game">
-          <img src="assets/pedra.png" alt="">
-        </div>
-        <div class="card-game">
-          <img src="assets/papel.png" alt="">
-        </div>
-        <div class="card-game">
-          <img src="assets/tesoura.png" alt="">
-        </div>
+        <!-- Render By Javascript File RobotCardGame -->
       </div>
     </main>
+
+    <footer>
+      <p>Version 1.0 - developed by Dev Gabriel Francisco &copy</p>
+      <a target="_blank" href="https://github.com/gabriel-corto/Game-Rock-Paper-Scissors"> <i class="fa-brands fa-github"></i> Github</a>
+    </footer>
+
   </div>
   
   <script src="js/icons.js"></script>
   <script src="js/App.js"></script> 
-  <script src="js/Create-User.js"></script> 
+  <script src="js/CreateUser.js"></script>
+  <script src="js/UserCardGame.js"></script> 
+  <script src="js/RobotCardGame.js"></script> 
+
 </body>
 </html>

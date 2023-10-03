@@ -3,14 +3,19 @@ function Play() {
   const UserCardsGame = document.querySelectorAll(".user-player .card-game")
 
   UserCardsGame.forEach((card_game) => {
-    card_game.addEventListener("click", (event) => {
+    card_game.addEventListener("click", () => {
 
       const RenderCardGame = document.querySelector(".render_card_user")
       const CurremtCard = RenderCardGame.querySelector("img")
       
-      const thisImage = card_game.querySelector("img").getAttribute("src")
+      const thisImage = card_game.querySelector("img")
+      .getAttribute("src")
 
+      const getAltImg = card_game.querySelector("img")
+      .getAttribute("alt")
+      
       CurremtCard.setAttribute("src", `${thisImage}`)
+      CurremtCard.setAttribute("alt", `${getAltImg}`)
       CurremtCard.classList.add("animated")
 
       setTimeout(() => {
@@ -19,17 +24,27 @@ function Play() {
 
       setTimeout(() => {
         const RobotCardsGame = [
-          {imgUrl: "assets/pedra.png"},
-          {imgUrl: "assets/papel.png"},
-          {imgUrl: "assets/tesoura.png"},
+          {
+            imgUrl: "assets/pedra.png", 
+            imgAlt: "Hand Stone Image"
+          },
+          {
+            imgUrl: "assets/papel.png", 
+            imgAlt: "Hand Paper Image"
+          },
+          {
+            imgUrl: "assets/tesoura.png", 
+            imgAlt: "Hand scissors Image"
+          },
         ]
 
         const RobotCard = RobotCardsGame[Math.floor(Math.random() * RobotCardsGame.length)]
 
-        const render_card_vs_player = document.querySelector(".render_card_vs_player")
-        const Robot = render_card_vs_player.querySelector("img")
+        const render_card_robot_player = document.querySelector(".render_card_robot_player")
+        const Robot = render_card_robot_player.querySelector("img")
 
         Robot.setAttribute("src", `${RobotCard.imgUrl}`)
+        Robot.setAttribute("alt", `${RobotCard.imgAlt}`)
         Robot.classList.add("animated")
 
         setTimeout(() => {
@@ -75,4 +90,3 @@ window.addEventListener("load", () => {
     Play()
   }, 600)
 })
-

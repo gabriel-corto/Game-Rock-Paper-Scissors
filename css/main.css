@@ -23,6 +23,35 @@ body {
   color: #fff;
   font-weight: 400;
 }
+.username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.username input, button{
+  width: 100%;
+  padding: 11px;
+  margin-top: 9px;
+  border-radius: 7px;
+  color: #334;
+  font-weight: 400;
+  text-align: center;
+  border: 2px solid transparent;
+}
+.username input:focus{
+  outline: none;
+  border: 3px solid #f8aa00;
+}
+.username button {
+  color: white;
+  cursor: pointer;
+  background: #ffb700;
+  transition: all .1s;
+  box-shadow: 0px 3px 1px #666;
+}
+.username button:hover{
+  background: #f8aa00;
+} 
 .grid-game{
   gap: 1rem;
   display: flex;
@@ -85,10 +114,7 @@ body {
   animation: appear .2s linear;
 }
 @keyframes appear {
-  0%{
-    scale: .5;
-    opacity: 0;
-  }
+  0%{scale: .5;opacity: 0;}
 }
 .board-play .player-content{
   font-weight: 300;
@@ -107,39 +133,27 @@ body {
   border-radius: 6px;
   background: #8256e7;
 }
-.username {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.username input, button{
-  width: 100%;
-  padding: 11px;
-  margin-top: 9px;
-  border-radius: 7px;
-
-  color: #334;
-  font-weight: 400;
-  text-align: center;
-  border: 2px solid transparent;
-}
-.username input:focus{
-  outline: none;
-  border: 3px solid #f8aa00;
-}
-.username button {
-  color: white;
-  cursor: pointer;
-  background: #ffb700;
-  transition: all .1s;
-  box-shadow: 0px 3px 1px #666;
-}
-.username button:hover{
-  background: #f8aa00;
-} 
 @media (max-width: 600px) {
   .grid-game{ scale: .7; }
 }
 @media (max-width: 400px) {
   .grid-game{ scale: .6; }
+}
+footer {
+  color: white;
+  font-size: .9rem;
+  text-align: center;
+  margin-top: 1rem;
+  gap: 9px;
+  display: grid;
+}
+footer a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 3px;
+  background: #f8aa00;
 }
