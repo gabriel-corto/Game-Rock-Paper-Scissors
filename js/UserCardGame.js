@@ -2,9 +2,9 @@
 
 function UserCardsGame(){
   const card_images = [
-    {imgUrl: "assets/pedra.png", imgAlt: "Hand Stone Image"},
-    {imgUrl: "assets/papel.png", imgAlt: "Hand Paper Image"},
-    {imgUrl: "assets/tesoura.png", imgAlt: "Hand scissors Image"},
+    {Url: "assets/pedra.png", Alt: "Hand Stone Image"},
+    {Url: "assets/papel.png", Alt: "Hand Paper Image"},
+    {Url: "assets/tesoura.png", Alt: "Hand scissors Image"},
   ]
 
   const user_player = document.querySelector(".user-player")
@@ -12,7 +12,7 @@ function UserCardsGame(){
   user_player.innerHTML += card_images.map((image) => {
     return(
       `<div class="card-game">
-        <img src=${image.imgUrl} alt=${image.imgAlt}>
+        <img src=${image.Url} alt=${image.Alt}>
       </div>`
     )
   }).join("")

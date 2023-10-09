@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# Game-Rock-Paper-Scissors
+Trainning Javascript - Developer 🚧 - A Game 
+>>>>>>> a3672709c6c104c9b17d20094fe4be740c62a7eb
 
 # Game Logic Rules
 
@@ -7,6 +12,7 @@
 4. EACH PLAYER SHOWS, 
 5. AT THE SAME TIME, 
 6. THE OPTION CHOSEN WITH HIS HAND.
+<<<<<<< HEAD
 
 # Game Layout
 <p>1. First Page (User Can put his name) <p>
@@ -36,3 +42,5 @@
 
 # Some Notes
 <p>This project is open source you can download and you can take to your workspace to show the code. andif you have some suggestion send email to: <a href="email:gabrielcorto272@gmail.com" target="_blank">gabrielcorto272@gmail.com</a></p>
+=======
+>>>>>>> a3672709c6c104c9b17d20094fe4be740c62a7eb
